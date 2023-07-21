@@ -88,7 +88,7 @@ function showBoats()
       var position = random(positions)
       var boat = new Boat(width-79, height - 60, 170, 170, position);
       boats.push(boat)
-      for(var i = 0; i> boats.length; i++)
+      for(var i = 0; i< boats.length; i++)
       {
         if (boats[i]) {
           Matter.Body.setVelocity(boats[i].body,{x:-0.9, y:0})
@@ -102,8 +102,7 @@ function showBoats()
   {
     var boat = new Boat(width-79, height - 60, 170, 170,-80);
     boats.push(boat)
-    Matter.Body.setVelocity(boat.body,{x:-0.9, y:0})
-    boat.display()
+
   
   }
 }
